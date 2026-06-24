@@ -3572,8 +3572,8 @@
                 }
                 , 400);
                 // Weather
-                fetchW(f.dist);
-                // News
+                fetchW(f.dist);	
+                // Newsa
                 const fb = "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&q=60";
                 const NEWS = [{
                     tag: "Price Alert",
@@ -3661,7 +3661,7 @@
         </script>
     </body>
     <script>
-        var _gK = "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";
+        var _gK = "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";
         var _gChat = "https://api.groq.com/openai/v1/chat/completions";
         var _gcO = false
           , _gcH = [];
@@ -3736,7 +3736,7 @@
                     rep = "No response. Try again.";
                 } else {
                     rep = d.choices[0].message.content;
-                    _gcH.push([q, rep]);
+                    _gcH.push([q, rep]);-_
                     if (_gcH.length > 8)
                         _gcH = _gcH.slice(-8);
                 }
